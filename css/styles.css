@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    size: auto;
+    max-height: 100%;
+    max-width: 100%;
+    /* max-width: 1200px; */
+}
+
+body {
+    background-image: url();
+
+}
+
+.wrapper {
+    padding: 10px 120px;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*  minmax code from: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+
+.grid-parent1 {
+    display: grid;
+    grid-template-columns: 3fr minmax(300px, 3fr);
+
+}
+
+
+.grid-parent2 {
+    display: grid;
+
+    grid-template-columns: 2fr 2fr 2fr;
+
+}
+
+.grid-item {
+    margin: 0px 10px 10px 10px;
+
+}
+
+body {
+    font-family: 'Bitter', serif;
+    color: #021104;
+    margin: 10;
+    background-color: #77aa54;
+
+}
+
+/*  gradieny code from: https://www.w3schools.com/css/css3_gradients.asp */
+header {
+    /* text-align: center; */
+
+    background-image: linear-gradient(#26c55b, #e6ffca);
+
+}
+
+
+main {
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    flex-grow: 1;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #e60092;
+}
+
+a:visited {
+
+    color: #8700d6;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: 700;
+
+}
+
+h3 {
+    font-size: 25px;
+
+}
+
+p {
+    font-size: 19px;
+
+}
+
+/*
+
+a.button {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #F85A9Eff;
+    color: white;
+
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    transition: .1s;
+}
+
+ drop shadow code from: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow 
+
+a.button:hover {
+    filter: drop-shadow(4px 4px 1px #1d14855d);
+    background-color: #761678;
+
+}
+
+img.square {
+    filter: drop-shadow(0px 0px 0px #170f6d4c) grayscale(100%);
+    transition: 0.15s;
+}
+
+img.square:hover {
+    filter: drop-shadow(6px 6px 1px #170f6d4c);
+
+}
+*/
+
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(#ffdcdc, #ffb5c7);
+    height: 100%;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.flex-parent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
