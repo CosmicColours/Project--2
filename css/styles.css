@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-    padding: 10px 120px;
+    padding: 10px 110px;
 
 }
 
@@ -71,7 +71,7 @@ header .wrapper {
 
 .grid-parent1 {
     display: grid;
-    grid-template-columns: 3fr minmax(300px, 3fr);
+    grid-template-columns: 3fr 2fr;
 
 }
 
@@ -205,10 +205,9 @@ footer {
 
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
 
-    .grid-parent {
-        display: grid;
+    .grid-parent1 {
         grid-template-columns: 1fr;
 
     }
