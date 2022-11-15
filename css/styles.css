@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-    padding: 10px 110px;
+    padding: 35px 20px;
 
 }
 
@@ -59,19 +59,34 @@ header .wrapper {
 }
 
 .top-nav a:hover {
-    color: #d9ed28;
+    padding: 0px 15px 0px 0px;
+    display: inline-block;
+    border-radius: 50px;
+    color: #edab28;
+    font-weight: bold;
 
 }
 
 .top-nav .active {
+    color: #d9ed28;
     text-decoration: underline;
+}
+
+
+a h1 {
+    transition: 0.12s;
+}
+
+a h1:hover {
+
+    color: #66e4c9;
 }
 
 /*  minmax code from: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
 
 .grid-parent1 {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -121,9 +136,15 @@ a {
     color: #e60092;
 }
 
-a:visited {
+a h1 {
+    color: #021104;
 
-    color: #8700d6;
+}
+
+
+main a:visited {
+
+    color: #d600d2;
 }
 
 h1 {
@@ -205,12 +226,14 @@ footer {
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 900px) {
 
     .grid-parent1 {
         grid-template-columns: 1fr;
-
     }
 
+    .grid-parent2 {
+        grid-template-columns: 1fr;
+    }
 
 }
