@@ -41,7 +41,7 @@ header .wrapper {
 
 .top-nav ul {
     list-style-type: none;
- 
+
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -49,11 +49,11 @@ header .wrapper {
     /*justify-content: space-around; */
     column-gap: 40px;
     margin-bottom: 15px;
-   
+
 }
 
 .top-nav a {
-    font-size:4vh;
+    font-size: 4vh;
     color: white;
 
     text-transform: uppercase;
@@ -82,32 +82,39 @@ header .wrapper {
 .grid-parent1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-text-align: center;
+    text-align: center;
 }
 
 .grid-parent11 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: auto;
 
 }
 
 
 .grid-parent2 {
-    display: grid;
-
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
+   
+  grid-gap: 3px;
+    text-align: center;
+}
 
+.grid-parent2 img {
+
+
+    margin: 7vh
 }
 
 
 
 
-.grid-parent3{
+.grid-parent3 {
 
-/*  minmax code from: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+    /*  minmax code from: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
     display: grid;
     grid-template-columns: 1fr;
 
@@ -148,7 +155,7 @@ main {
 }
 
 .logo {
-padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -161,22 +168,22 @@ a h1 {
 
 }
 
-a .logo{
+a .logo {
 
-transition: 0.5s;
+    transition: 0.5s;
 
 }
-a .logo:hover{
+
+a .logo:hover {
     padding: 0px 10px 10px 0px;
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
-main a:visited {
-
-  
-}
+main a:visited {}
 
 h1 {
     font-family: 'Cagliostro', sans-serif;
@@ -194,32 +201,45 @@ h2 {
 
 }
 
+.backdrop {
+padding: 7vh;
+background-image: url("../images/map2.png");
+
+
+}
+
+.backdrop h2 {
+
+    filter: drop-shadow(2px 2px 2px #ffffffc6);
+}
+
+
 h3 {
     font-size: 25px;
 
 }
 
 p {
-    margin:0 auto;
-max-width: 70%;
+    margin: 0 auto;
+    max-width: 70%;
 
-justify-content: center;
+    justify-content: center;
     font-size: 19px;
-   
+
 }
 
 li {
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 70%;
     justify-content: center;
-        font-size: 19px;
+    font-size: 19px;
 
-    
+
 }
 
 
 
- a.button {
+a.button {
     text-decoration: none;
     font-size: 20px;
     background-color: rgb(124, 225, 35);
@@ -243,8 +263,15 @@ a.button:hover {
 
 .gif {
 
-padding: 10px;
+    padding: 10px;
 }
+
+
+.gif .eq {
+    margin-left: ;
+    padding: 10px;
+}
+
 /*
 
 img.square {
@@ -278,14 +305,20 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    
+
 
     .grid-parent1 {
         grid-template-columns: 1fr;
     }
-
-    .grid-parent2 {
+    .grid-parent11 {
         grid-template-columns: 1fr;
+    }
+
+    .grid-parent2 {   
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-gap: 0px;
+        
     }
 
     .top-nav ul {
@@ -293,30 +326,37 @@ footer {
         font-size: 25px;
         margin: ;
         padding: 10px;
-        display:inline;
+        display: inline;
         text-align: center;
         /*justify-content: space-around; */
         margin-bottom: 15px;
     }
 
     .top-nav li {
-        margin:0 auto;
+        margin: 0 auto;
         padding-top: 6%;
         font-size: 3.5vh;
-        
+
+    }
+
+    .flex-head {
+        display: flex;
+        justify-content: center;
     }
 
     .logo {
         align-items: center;
 
-        }
+    }
 
-        a .logo:hover{
-            padding: 10px 0px 10px 0px;
-            -ms-transform: scale(1.1); /* IE 9 */
-            -webkit-transform: scale(1.1); /* Safari 3-8 */
-            transform: scale(1.1); 
-        }
-        
+    a .logo:hover {
+        padding: 10px 0px 10px 0px;
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+
 
 }
