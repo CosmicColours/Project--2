@@ -328,9 +328,15 @@ footer {
     .grid-parent2 {   
         display: grid;
         grid-template-columns: 1fr; 
-        grid-gap: 0px;
         
     }
+
+
+.grid-parent2 img {
+
+
+    margin: 0vh
+}
 
     .grid-parent1 li{
         margin-left: 60px;
