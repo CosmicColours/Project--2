@@ -268,10 +268,15 @@ a.button:hover {
 }
 
 .gif {
-
+    transition: transform .2s;
     padding: 10px;
 }
 
+.gif:hover{
+
+
+    transform: scale(1.25); 
+}
 
 .gif .eq {
     margin-left: ;
