@@ -224,7 +224,7 @@ h2 {
 
 .backdrop h2 {
 
-    filter: drop-shadow(2px 2px 2px #ffffffc6);
+    filter: drop-shadow(2px 2px 3px #ffffff);
 }
 
 
