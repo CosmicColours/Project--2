@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-    padding: 35px 20px;
+    padding: 50px;
 
 }
 
@@ -42,8 +42,8 @@ header .wrapper {
 .top-nav ul {
     list-style-type: none;
     font-size: 25px;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     display: flex;
     text-align: right;
     /*justify-content: space-around; */
@@ -59,7 +59,6 @@ header .wrapper {
 }
 
 .top-nav a:hover {
-    padding: 0px 15px 0px 0px;
     display: inline-block;
     border-radius: 50px;
     color: #edab28;
@@ -68,25 +67,17 @@ header .wrapper {
 }
 
 .top-nav .active {
-    color: #d9ed28;
+    color: #edc928;
     text-decoration: underline;
 }
 
 
-a h1 {
-    transition: 0.12s;
-}
-
-a h1:hover {
-
-    color: #66e4c9;
-}
 
 /*  minmax code from: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
 
 .grid-parent1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
@@ -114,7 +105,7 @@ body {
 /*  gradieny code from: https://www.w3schools.com/css/css3_gradients.asp */
 header {
     /* text-align: center; */
-    background-color: #2b7e2b;
+    background-color: #327232;
     /*background-image: linear-gradient(#26c55b, #e6ffca);*/
 
 }
@@ -129,11 +120,13 @@ main {
 
 }
 
+.logo {
+padding-bottom: 10px;
+}
 
 
 a {
     text-decoration: none;
-    color: #e60092;
 }
 
 a h1 {
@@ -144,7 +137,7 @@ a h1 {
 
 main a:visited {
 
-    color: #d600d2;
+  
 }
 
 h1 {
@@ -156,8 +149,8 @@ h1 {
 
 h2 {
 
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 55px;
     font-weight: 700;
 
@@ -173,28 +166,33 @@ p {
 
 }
 
-/*
-
-a.button {
+ a.button {
     text-decoration: none;
     font-size: 20px;
-    background-color: #F85A9Eff;
-    color: white;
+    background-color: rgb(124, 225, 35);
+    color: rgb(19, 4, 40);
 
     font-weight: 600;
+    margin-top: 30px;
     border-radius: 8px;
     padding: 10px;
     display: inline-block;
-    transition: .1s;
+    transition: .07s;
 }
 
- drop shadow code from: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow 
+/*drop shadow code from: https: //developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
 
 a.button:hover {
     filter: drop-shadow(4px 4px 1px #1d14855d);
-    background-color: #761678;
+    background-color: #126b45;
 
 }
+
+.gif {
+
+padding: 10px;
+}
+/*
 
 img.square {
     filter: drop-shadow(0px 0px 0px #170f6d4c) grayscale(100%);
@@ -205,12 +203,12 @@ img.square:hover {
     filter: drop-shadow(6px 6px 1px #170f6d4c);
 
 }
-*/
 
+*/
 
 footer {
     text-align: center;
-    background-image: linear-gradient(#ffdcdc, #ffb5c7);
+    background-color: #327232;
     height: 100%;
 
     flex-wrap: wrap;
@@ -226,7 +224,8 @@ footer {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
+    
 
     .grid-parent1 {
         grid-template-columns: 1fr;
@@ -235,5 +234,26 @@ footer {
     .grid-parent2 {
         grid-template-columns: 1fr;
     }
+
+    .top-nav ul {
+        list-style-type: none;
+        font-size: 25px;
+        margin: ;
+        padding: 10px;
+        display:inline;
+        text-align: center;
+        /*justify-content: space-around; */
+        margin-bottom: 15px;
+    }
+
+    .top-nav li {
+        padding-top: 6%;
+    }
+
+    .logo {
+        align-items: center;
+
+        }
+        
 
 }
