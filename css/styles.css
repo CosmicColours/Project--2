@@ -145,12 +145,13 @@ header {
 
 main {
     text-align: center;
-    border-radius: 5px;
-  
-    padding-bottom: 50px;
+    padding-bottom: 5vh;
+
     flex-grow: 1;
 
 }
+
+
 
 .logo {
     padding-bottom: 10px;
@@ -180,6 +181,7 @@ a .logo {
 
 }
 
+/*code taken from: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 a .logo:hover {
     padding: 0px 10px 10px 0px;
     -ms-transform: scale(1.1);
@@ -189,7 +191,7 @@ a .logo:hover {
     transform: scale(1.1);
 }
 
-main a:visited {}
+
 
 h1 {
     font-family: 'Cagliostro', sans-serif;
